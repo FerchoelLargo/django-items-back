@@ -7,12 +7,6 @@ router = routers.DefaultRouter()
 router.register(r'items', views.ItemViewSet,"item")
 
 
-"""
-    path('', views.index, name='index'),
-    path('index2', views.index2, name='index2'),
-"""
-
-
 urlpatterns = [
     path('', include(router.urls)),
     path('api-auth/', include('rest_framework.urls', namespace='rest_framework')),

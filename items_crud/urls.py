@@ -19,6 +19,5 @@ from django.views.generic import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('react/', TemplateView.as_view(template_name="index.html")),
 	path('rest/', include('items.urls'))
 ]
